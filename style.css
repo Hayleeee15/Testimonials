@@ -1,2 +1,20 @@
+:root {
+    --one-p-color: hsl(260, 100%, 95%);
+    --icon-color: hsl(264, 82%, 80%);
+    --one-bg: hsl(263, 55%, 52%);
+    --three-five-bg: hsl(0, 0%, 100%);
+    --primary-bg-color: hsl(214, 17%, 92%);
+    --two-p-color: hsl(0, 0%, 81%);
+    --four-p-color: hsl(224, 10%, 45%);
+    --three-five-p-color: hsl(217, 19%, 35%);
+    --two-bg: hsl(219, 29%, 14%);
+    --four-bg: hsl(0, 0%, 7%);
+}
+
+
+
+
+
+
 footer { font-size: 11px; text-align: center; }
 footer a { color: hsl(228, 45%, 44%); }
