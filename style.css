@@ -51,11 +51,8 @@ body {
     font-weight: var(--fw-med);
 
     display: grid;
-    place-content: center;
-    min-height: 100vh;    
+    place-content: center;   
 }
-
-
 
 /* #region specific styles */
 .content {
@@ -125,8 +122,6 @@ body {
 /* #endregion */
 
 /* media queries */
-
-
 @media (min-width: 48rem){
 .content {
     display: grid;
