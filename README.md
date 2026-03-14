@@ -20,4 +20,4 @@ Initial commit
 
 Sorted through HTML and added semantic tags and classes
 
-Eneablend CSS variables
+Eneabled CSS variables

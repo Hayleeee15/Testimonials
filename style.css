@@ -9,39 +9,100 @@
     --three-five-p-color: hsl(217, 19%, 35%);
     --two-bg: hsl(219, 29%, 14%);
     --four-bg: hsl(0, 0%, 7%);
+
+    --ff: 'Barlow Semi Condensed', sans-serif;
+    --fs: .8125rem;
+    --fw-med: 500;
+    --fw-lrg: 600;
+
+    /* content styles */
+    --content-br: .25rem;
+    --content-padding: 2rem;
 }
 
-*, * ::before, * ::after {
+/* #region reset */
+*::before, *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-img, picture, video {
+* {
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+img, picture, video,canvas, svg {
     display: block;
-    block-size: auto;
     max-width: 100%;
 }
+/* #endregion reset */
 
+/*general styles*/
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
     background-color: var(--primary-bg-color);
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: .8125rem;
+    font-family: var(--ff);
+    font-size: var(--fs);
+    font-weight: var(--fw-med);
+
+    display: grid;
+    place-content: center;
+    min-height: 100vh;    
 }
 
+
+
+/* #region specific styles */
 .content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    max-width: 69.625rem;
-    gap: 1rem;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.one {
+    grid-column: 1;
+
+    background-color: var(--one-bg);
+    color: var(--one-p-color);
+    border-radius: var(--content-br);
+    padding: var(--content-padding);
+}
+.two {
+    grid-column: 1;
+
+    background-color: var(--two-bg);
+    color: var(--two-p-color);
+    border-radius: var(--content-br);
+    padding: var(--content-padding);
+}
+.three {
+    grid-column: 1;
+
+    background-color: var(--three-five-bg);
+    color: var(--three-five-p-color);
+    border-radius: var(--content-br);
+    padding: var(--content-padding);
+}
+.four {
+    grid-column: 1;
+
+    background-color: var(--four-bg);
+    color: var(--four-p-color);
+    border-radius: var(--content-br);
+    padding: var(--content-padding);
+}
+.five {
+    grid-column: 1;
+
+    background-color: var(--three-five-bg);
+    color: var(--three-five-p-color);
+    border-radius: var(--content-br);
+    padding: var(--content-padding);
 }
 
 .name{
@@ -61,56 +122,81 @@ body {
 .comment{
     line-height: 140%;
 }
+/* #endregion */
 
+/* media queries */
+
+
+@media (min-width: 48rem){
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    max-width: 40.4375rem;
+    gap: 1rem;
+}
 
 .one {
     grid-column: 1 / span 2;
     grid-row: 1;
+}
 
-    background-color: var(--one-bg);
-    color: var(--one-p-color);
-    border-radius: .25rem;
-    padding: 2rem;
+.two {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.three {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.five {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}    
+}
+
+@media (min-width: 49rem) {
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    max-width: 69.625rem;
+    gap: 1rem;
+}
+
+.one {
+    grid-column: 1 / span 2;
+    grid-row: 1;
 }
 
 .two {
     grid-column: 3;
     grid-row: 1;
-
-    background-color: var(--two-bg);
-    color: var(--two-p-color);
-    border-radius: .25rem;
-    padding: 2rem;
 }
 
 .three {
     grid-column: 1;
     grid-row: 2;
-
-    background-color: var(--three-five-bg);
-    color: var(--three-five-p-color);
-    border-radius: .25rem;
-    padding: 2rem;
 }
 
 .four {
     grid-column: 2 / span 2;
     grid-row: 2;
-
-    background-color: var(--four-bg);
-    color: var(--four-p-color);
-    border-radius: .25rem;
-    padding: 2rem;
 }
 
 .five {
     grid-column: 4;
     grid-row: 1 / span 2;
-
-    background-color: var(--three-five-bg);
-    color: var(--three-five-p-color);
-    border-radius: .25rem;
-    padding: 2rem;
+}
 }
 
 
