@@ -1,6 +1,12 @@
 #  ✨ WIP ✨
 ## Update Progress
 
+### March 15th, 2026
+
+Created profile section using flex
+
+Minor updates to some padding
+
 ### March 13th, 2026
 
 Updates to media queries
