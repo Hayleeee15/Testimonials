@@ -117,8 +117,8 @@ body {
 }
 /* #endregion */
 
-/* #region profile */
-.profile{
+/* #region header */
+header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -131,9 +131,10 @@ body {
     height: 1.75rem;
 }
 
-.name{
+h3 {
     line-height: 110%;
     margin-bottom: .25rem;
+    font-size: var(--fs);
 }
 
 .title{
