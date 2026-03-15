@@ -1,6 +1,7 @@
 :root {
     --one-p-color: hsl(260, 100%, 95%);
     --icon-color: hsl(264, 82%, 80%);
+    --content-shadow: hsl(0, 0%, 81%);
     --one-bg: hsl(263, 55%, 52%);
     --three-five-bg: hsl(0, 0%, 100%);
     --primary-bg-color: hsl(214, 17%, 92%);
@@ -69,6 +70,8 @@ body {
     background-color: var(--one-bg);
     color: var(--one-p-color);
     border-radius: var(--content-br);
+    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
+    
     padding: var(--content-padding);
 }
 
@@ -78,7 +81,9 @@ body {
     background-color: var(--two-bg);
     color: var(--two-p-color);
     border-radius: var(--content-br);
-    padding: var(--content-padding);
+    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
+
+    padding: var(--content-padding);   
 }
 .three {
     grid-column: 1;
@@ -86,6 +91,8 @@ body {
     background-color: var(--three-five-bg);
     color: var(--three-five-p-color);
     border-radius: var(--content-br);
+    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
+
     padding: var(--content-padding);
 }
 .four {
@@ -94,6 +101,8 @@ body {
     background-color: var(--four-bg);
     color: var(--four-p-color);
     border-radius: var(--content-br);
+    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
+
     padding: var(--content-padding);
 }
 .five {
@@ -102,6 +111,8 @@ body {
     background-color: var(--three-five-bg);
     color: var(--three-five-p-color);
     border-radius: var(--content-br);
+    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
+
     padding: var(--content-padding);
 }
 /* #endregion */
@@ -147,7 +158,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    align-items: center;
     max-width: 40.4375rem;
     gap: 1rem;
 }
@@ -183,7 +193,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    align-items: center;
     max-width: 69.625rem;
     gap: 1rem;
 }
@@ -213,10 +222,6 @@ body {
     grid-row: 1 / span 2;
 }
 }
-
-
-
-
 
 footer { 
     font-size: .75rem; 
