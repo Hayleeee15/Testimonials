@@ -1,4 +1,46 @@
 #  ✨ WIP ✨
+
+# Testimonials 🚀
+
+## Overview
+This is a simple testimonial page that uses both grid and flexbox.
+
+Built to be responsive depending on device size.
+(WIP)
+
+### Built With
+🔴 Semantic HTML
+
+🔴 CSS Custom Properties
+
+🔴 CSS Grid & Flex
+
+🔴 Mobile First
+
+🔴 Google Fonts
+
+### Preview
+
+<div align="left">
+  <div>
+    <b>Mobile Design:</b>
+  </div>
+  <div>
+  <p> WIP </p>
+  </div>
+  <div>
+    <b>Tablet Design:</b>
+  </div>
+  <div>
+  <p> WIP </p>
+  </div>
+  <div>
+    <b>Desktop Design:</b>
+  </div>
+  <div>
+    <p> WIP </p>
+  </div>
+</div>
 ## Update Progress
 
 ### March 15th, 2026
