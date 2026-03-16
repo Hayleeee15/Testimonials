@@ -1,10 +1,10 @@
 :root {
+    --primary-bg-color: hsl(0, 0%, 100%);
     --one-p-color: hsl(260, 100%, 95%);
     --icon-color: hsl(264, 82%, 80%);
     --content-shadow: hsl(0, 0%, 81%);
     --one-bg: hsl(263, 55%, 52%);
     --three-five-bg: hsl(0, 0%, 100%);
-    --primary-bg-color: hsl(214, 17%, 92%);
     --two-p-color: hsl(0, 0%, 81%);
     --four-p-color: hsl(224, 10%, 45%);
     --three-five-p-color: hsl(217, 19%, 35%);
@@ -17,7 +17,7 @@
     --fw-lrg: 600;
 
     /* content styles */
-    --content-br: .25rem;
+    --content-br: .5rem;
     --content-padding: 2rem;
 }
 
@@ -64,56 +64,40 @@ body {
     gap: 2rem;
 }
 
-.one {
+.card{
     grid-column: 1;
 
-    background-color: var(--one-bg);
-    color: var(--one-p-color);
     border-radius: var(--content-br);
-    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
+    box-shadow: .5rem .5rem 1.5rem .25rem var(--content-shadow); 
+    background-color: var(--three-five-bg);
+    color: var(--three-five-p-color);
     
     padding: var(--content-padding);
 }
 
-.two {
-    grid-column: 1;
+.one {
+    background-color: var(--one-bg);
+    color: var(--one-p-color);
+}
 
+.two {
     background-color: var(--two-bg);
     color: var(--two-p-color);
-    border-radius: var(--content-br);
-    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
-
-    padding: var(--content-padding);   
 }
-.three {
-    grid-column: 1;
 
+.three {
     background-color: var(--three-five-bg);
     color: var(--three-five-p-color);
-    border-radius: var(--content-br);
-    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
-
-    padding: var(--content-padding);
 }
-.four {
-    grid-column: 1;
 
+.four {
     background-color: var(--four-bg);
     color: var(--four-p-color);
-    border-radius: var(--content-br);
-    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
-
-    padding: var(--content-padding);
 }
-.five {
-    grid-column: 1;
 
+.five {
     background-color: var(--three-five-bg);
     color: var(--three-five-p-color);
-    border-radius: var(--content-br);
-    box-shadow: 1rem 1rem 4rem .5rem var(--content-shadow);
-
-    padding: var(--content-padding);
 }
 /* #endregion */
 
@@ -154,6 +138,8 @@ h3 {
 /* #endregion */
 
 /* media queries */
+
+/* tablet */
 @media (min-width: 48rem){
 .content {
     display: grid;
@@ -189,12 +175,14 @@ h3 {
 }    
 }
 
-@media (min-width: 49rem) {
+/* desktop */
+@media (min-width: 64rem) {
 .content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     max-width: 69.625rem;
+    max-height: 36.375rem;
     gap: 1rem;
 }
 
@@ -223,10 +211,3 @@ h3 {
     grid-row: 1 / span 2;
 }
 }
-
-footer { 
-    font-size: .75rem; 
-    text-align: center; }
-footer a { 
-    text-decoration: none;
-    color: hsl(228, 45%, 44%); }

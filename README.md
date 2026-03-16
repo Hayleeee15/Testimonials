@@ -43,6 +43,12 @@ Built to be responsive depending on device size.
 </div>
 ## Update Progress
 
+### March 16th, 2026
+
+Condensed duplicate CSS
+
+Fixed Media Queries
+
 ### March 15th, 2026
 
 Created profile section using flex
