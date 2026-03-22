@@ -27,21 +27,22 @@ Built to be responsive depending on device size.
     <b>Mobile Design:</b>
   </div>
   <div>
-  <p> WIP </p>
+  <p><img src="" alt="Mobile Preview" width="250"></p>
   </div>
   <div>
     <b>Tablet Design:</b>
   </div>
   <div>
-  <p> WIP </p>
+    <p><img src="" alt="Tablet Preview" width="500"></p>
   </div>
   <div>
     <b>Desktop Design:</b>
   </div>
   <div>
-    <p> WIP </p>
+    <p><img src="" alt="Desktop Preview" width="500"></p>
   </div>
 </div>
+
 ## Update Progress
 
 ### March 21st, 2026
