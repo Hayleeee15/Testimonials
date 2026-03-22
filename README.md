@@ -1,23 +1,24 @@
-#  ✨ WIP ✨
-
 # Testimonials 🚀
 
 ## Overview
 This is a simple testimonial page that uses both grid and flexbox.
 
 Built to be responsive depending on device size.
-(WIP)
 
 ### Built With
+
+🔴 Mobile First
+
+🔴 Google Fonts
+
 🔴 Semantic HTML
 
 🔴 CSS Custom Properties
 
 🔴 CSS Grid & Flex
 
-🔴 Mobile First
+🔴 CSS Nesting
 
-🔴 Google Fonts
 
 ### Preview
 
@@ -42,6 +43,10 @@ Built to be responsive depending on device size.
   </div>
 </div>
 ## Update Progress
+
+### March 21st, 2026
+
+Created nested CSS styles to update colors within the cards
 
 ### March 16th, 2026
 
