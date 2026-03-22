@@ -1,5 +1,5 @@
 :root {
-    --primary-bg-color: hsl(214, 17%, 92%);        /* Grey 100 */
+    --primary-bg-color: F6F5F6;        /* Grey 100 */
     --content-shadow: hsl(0, 0%, 81%);             /* Grey 200 */
 
     --one-name-p-color: hsl(0, 0%, 100%);          /* White */
@@ -184,7 +184,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     max-width: 40.4375rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .one {
@@ -221,7 +221,7 @@ h3 {
     grid-template-rows: repeat(2, 1fr);
     max-width: 69.625rem;
     max-height: 36.375rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .one {
