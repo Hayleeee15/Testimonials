@@ -27,19 +27,19 @@ Built to be responsive depending on device size.
     <b>Mobile Design:</b>
   </div>
   <div>
-  <p><img src="" alt="Mobile Preview" width="250"></p>
+  <p><img src="./design/Testimonials-Mobile-Screenshot.png" alt="Mobile Preview" width="250"></p>
   </div>
   <div>
     <b>Tablet Design:</b>
   </div>
   <div>
-    <p><img src="" alt="Tablet Preview" width="500"></p>
+    <p><img src="./design/Testimonials-Tablet-Screenshot.png" alt="Tablet Preview" width="500"></p>
   </div>
   <div>
     <b>Desktop Design:</b>
   </div>
   <div>
-    <p><img src="" alt="Desktop Preview" width="500"></p>
+    <p><img src="./design/Testimonials-Desktop-Screenshot.png" alt="Desktop Preview" width="500"></p>
   </div>
 </div>
 
