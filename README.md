@@ -17,8 +17,6 @@ Built to be responsive depending on device size.
 
 🔴 CSS Grid & Flex
 
-🔴 CSS Nesting
-
 
 ### Preview
 
@@ -47,7 +45,7 @@ Built to be responsive depending on device size.
 
 ### March 21st, 2026
 
-Created nested CSS styles to update colors within the cards
+Updated colors within the cards
 
 ### March 16th, 2026
 

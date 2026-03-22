@@ -85,59 +85,52 @@ body {
 .one {
     background: var(--one-bg) url(images/bg-pattern-quotation.svg) no-repeat right 3.75rem top;
     color: var(--one-name-p-color);
+}
 
-    .title, blockquote{
-        color: var(--one-t-bq-color);
-    }
+.one .title, .one blockquote{
+    color: var(--one-t-bq-color);    
+}
 
-    .avatar{
+.one .avatar{
     border: solid var(--icon-color) .125rem;
-    }
 }
 
 .two {
     background-color: var(--two-bg);
     color: var(--two-name-p-color);
-    
-    .title, blockquote{
-        color: var(--two-t-bq-color);
-    }
 }
 
-.three {
+.two .title, .two blockquote{
+        color: var(--two-t-bq-color);
+}
+
+.three, .five {
     background-color: var(--three-five-bg);
     color: var(--three-five-name-p-color);
+}
 
-    .title, blockquote{
+.three .title, .three blockquote, .five .title, .five blockquote{
         color: var(--three-five-t-bq-color);
-    }
 }
 
 .four {
     background-color: var(--four-bg);
-    color: var(--four-name-title-color);
-    
-    .highlight{
+    color: var(--four-name-title-color);    
+}
+
+.four .highlight{
         color: var(--four-highlight-color);
-    }
+}
 
-    blockquote {
+.four blockquote {
         color: var(--four-bq-color);
-    }
-    
-    .avatar{
+}
+
+.four .avatar{
     border: solid var(--one-bg) .125rem;
-    }
 }
 
-.five {
-    background-color: var(--three-five-bg);
-    color: var(--three-five-name-p-color);
 
-    .title, blockquote{
-        color: var(--three-five-t-bq-color);
-    }
-}
 /* #endregion */
 
 /* #region header */
@@ -220,7 +213,6 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     max-width: 69.625rem;
-    max-height: 36.375rem;
     gap: 2rem;
 }
 
