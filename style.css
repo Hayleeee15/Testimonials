@@ -1,15 +1,24 @@
 :root {
-    --primary-bg-color: hsl(0, 0%, 100%);
-    --one-p-color: hsl(260, 100%, 95%);
-    --icon-color: hsl(264, 82%, 80%);
-    --content-shadow: hsl(0, 0%, 81%);
-    --one-bg: hsl(263, 55%, 52%);
-    --three-five-bg: hsl(0, 0%, 100%);
-    --two-p-color: hsl(0, 0%, 81%);
-    --four-p-color: hsl(224, 10%, 45%);
-    --three-five-p-color: hsl(217, 19%, 35%);
-    --two-bg: hsl(219, 29%, 14%);
-    --four-bg: hsl(0, 0%, 7%);
+    --primary-bg-color: hsl(214, 17%, 92%);        /* Grey 100 */
+    --content-shadow: hsl(0, 0%, 81%);             /* Grey 200 */
+
+    --one-name-p-color: hsl(0, 0%, 100%);          /* White */
+    --one-t-bq-color: hsl(260, 100%, 95%);         /* Purple 50 */
+    --one-bg: hsl(263, 55%, 52%);                  /* Purple 500 */
+    --icon-color: hsl(264, 82%, 80%);              /* Purple 300 */
+
+    --two-bg: hsl(217, 19%, 35%);                  /* Grey 500 */
+    --two-name-p-color: hsl(0, 0%, 100%);          /* White */
+    --two-t-bq-color: hsl(214, 17%, 92%)             /* Grey 100 */
+
+    --three-five-bg: hsl(0, 0%, 100%);               /* White */
+    --three-five-name-p-color: hsl(217, 19%, 35%); /* Grey 500 */
+    --three-five-t-bq-color: hsl(224, 10%, 45%);   /* Grey 400 */
+
+    --four-bg: hsl(219, 29%, 14%);                 /* Dark Blue */
+    --four-name-title-color: hsl(0, 0%, 100%);     /* White */
+    --four-highlight-color: hsl(0, 0%, 81%);       /* Grey 200 */
+    --four-bq-color: hsl(214, 17%, 92%);           /* Grey 100 */
 
     --ff: 'Barlow Semi Condensed', sans-serif;
     --fs: .8125rem;
@@ -68,36 +77,66 @@ body {
     grid-column: 1;
 
     border-radius: var(--content-br);
-    box-shadow: .5rem .5rem 1.5rem .25rem var(--content-shadow); 
-    background-color: var(--three-five-bg);
-    color: var(--three-five-p-color);
+    box-shadow: .5rem .5rem 1.5rem .25rem var(--content-shadow);
     
     padding: var(--content-padding);
 }
 
 .one {
-    background-color: var(--one-bg);
-    color: var(--one-p-color);
+    background: var(--one-bg) url(images/bg-pattern-quotation.svg) no-repeat right 3.75rem top;
+    color: var(--one-name-p-color);
+
+    .title, blockquote{
+        color: var(--one-t-bq-color);
+    }
+
+    .avatar{
+    border: solid var(--icon-color) .125rem;
+    }
 }
 
 .two {
     background-color: var(--two-bg);
-    color: var(--two-p-color);
+    color: var(--two-name-p-color);
+    
+    .title, blockquote{
+        color: var(--two-t-bq-color);
+    }
 }
 
 .three {
     background-color: var(--three-five-bg);
-    color: var(--three-five-p-color);
+    color: var(--three-five-name-p-color);
+
+    .title, blockquote{
+        color: var(--three-five-t-bq-color);
+    }
 }
 
 .four {
     background-color: var(--four-bg);
-    color: var(--four-p-color);
+    color: var(--four-name-title-color);
+    
+    .highlight{
+        color: var(--four-highlight-color);
+    }
+
+    blockquote {
+        color: var(--four-bq-color);
+    }
+    
+    .avatar{
+    border: solid var(--one-bg) .125rem;
+    }
 }
 
 .five {
     background-color: var(--three-five-bg);
-    color: var(--three-five-p-color);
+    color: var(--three-five-name-p-color);
+
+    .title, blockquote{
+        color: var(--three-five-t-bq-color);
+    }
 }
 /* #endregion */
 
@@ -110,7 +149,6 @@ header {
 }
 
 .avatar{
-    border: solid var(--icon-color) .2rem;
     border-radius: 100%;
     height: 1.75rem;
 }
